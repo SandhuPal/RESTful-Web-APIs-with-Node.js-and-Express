@@ -17,16 +17,16 @@ Building RESTful Web APIs with Node.js and Express<br>
 
 Robomongo (Studio 3T for mongodb) = Like postman for mongodb
 
-//Mongoose connection
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/CRMdb", {
-  useMongoClient: true
-});
+//Mongoose connection <br>
+mongoose.Promise = global.Promise; <br>
+mongoose.connect("mongodb://localhost/CRMdb", { <br>
+  useMongoClient: true <br>
+}); <br>
 
-//Body parser setup
-app.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
-);
+//Body parser setup <br>
+app.use( <br>
+  bodyParser.urlencoded({ <br>
+    extended: true <br>
+  }) <br>
+); <br>
 app.use(bodyParser.json());
